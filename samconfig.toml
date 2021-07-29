@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "CustomGitSource"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-3j2ncijxtyng"
+s3_prefix = "CustomGitSource"
+region = "eu-central-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "SourceActionVersion=\"1\" SourceActionProvider=\"CustomSourceForGit\""
